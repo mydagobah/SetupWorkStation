@@ -1,6 +1,6 @@
 syntax on
 filetype indent on  " per-filetype config
-
+set number
 " disable tab functions to avoid reviewboard white space problem
 "set tabstop=4
 "set softtabstop=4   " set the softtab stops to 4 spaces
@@ -11,6 +11,7 @@ filetype indent on  " per-filetype config
 
 let perl_fold=1
 
+" mainly for putty
 if &term =~ "xterm"
     "256 color --
     set t_Co=256
@@ -25,6 +26,7 @@ if &term =~ "xterm"
      endif
 endif
 
+" highlight whitespaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
