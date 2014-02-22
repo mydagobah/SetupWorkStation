@@ -1,6 +1,7 @@
 syntax on
 filetype indent on  " per-filetype config
 set number
+set statusline=1
 " disable tab functions to avoid reviewboard white space problem
 "set tabstop=4
 "set softtabstop=4   " set the softtab stops to 4 spaces
