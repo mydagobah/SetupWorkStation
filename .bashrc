@@ -2,7 +2,9 @@
 alias ..='cd ..'
 alias tm='tmux attach'
 alias gn='geeknote'
+alias gd='google docs'
 
+COLUMNS=500
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -26,7 +28,7 @@ HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+#shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -63,7 +65,7 @@ fi
 if [ "$color_prompt" = yes ]; then
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     # this will display code in 4 color
-    PS1="\e[01;31mc\e[m\e[01;34mo\e[m\e[01;33md\e[m\e[01;32me\e[m \e[01;30m>\e[m "
+    PS1="\[\e[01;31mc\e[m\e[01;34mo\e[m\e[01;33md\e[m\e[01;32me\e[m \e[01;30m>\e[m\] "
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
